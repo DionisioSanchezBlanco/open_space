@@ -43,28 +43,45 @@ body {
 }
 
 .control-panel {
-    background-color: #111832;
+
     bottom: 220px;
     position: absolute;
     right: 100px;
     text-align: center;
     width: 50%;
+    height: 32%;
+
+    background-image: linear-gradient( 109.6deg,  rgba(245,56,56,1) 11.2%, rgba(234,192,117,1) 78% );
+
+    background-size:16px 16px;
 }
 
 .control-panel div {
     margin: 0 auto;
+
 }
 
+.control-panel__inner{
+    background-color: #111832;
+    position: relative;
+    width: 97%;
+    height: 92%;
+    top: 12px;
+    bottom: 12px;
+}
 #password {
     margin: 10px 0;
     padding: 3px;
-    width: 165px;
+    width: 200px;
+    border: 2px solid #d54b57;
+    font-family: monospace;
 }
 
 #unlock,
 #launch {
     margin: 10px 0;
     padding: 3px 5px;
+
 }
 
 .check-buttons,
