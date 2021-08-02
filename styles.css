@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.space {
+    background-image: url('img/space.png');
+    background-repeat: round;
+    display: flex;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    width: 70vw;
+}
+
+.planet-area {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+}
+
+.planet {
+    bottom: -4px;
+    left: -4px;
+    position: absolute;
+    width: 500px;
+    z-index: 2;
+}
+
+.rocket {
+    bottom: 245px;
+    left: 245px;
+    position: absolute;
+    transform: rotate(30deg);
+    width: 200px;
+    z-index: 1;
+}
+
+.control-panel {
+    background-color: #111832;
+    bottom: 220px;
+    position: absolute;
+    right: 100px;
+    text-align: center;
+    width: 50%;
+}
+
+.control-panel div {
+    margin: 0 auto;
+}
+
+#password {
+    margin: 10px 0;
+    padding: 3px;
+    width: 165px;
+}
+
+#unlock,
+#launch {
+    margin: 10px 0;
+    padding: 3px 5px;
+}
+
+.check-buttons,
+.levers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.check-buttons {
+    padding: 15px 98px;
+}
+
+.levers {
+    padding: 15px 100px;
+}
+
+.levers input {
+    -webkit-appearance: slider-vertical; /* WebKit */
+    height: 80px;
+    padding: 0 5px;
+    width: 8px;
+    writing-mode: bt-lr; /* IE */
+}
+
+.btn{
+    background: #d54b57;
+    color: white;
+    padding: 9px;
+    border: 1px solid #fff;
+}
+
+.btn:hover{
+    color: #d54b57;
+    background: white;
+    border: 1px solid #d54b57;
+}
