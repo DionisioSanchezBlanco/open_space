@@ -40,6 +40,8 @@ body {
     transform: rotate(30deg);
     width: 200px;
     z-index: 1;
+    animation-duration: 3s;
+    animation-name: launching;
 }
 
 .control-panel {
@@ -117,4 +119,19 @@ body {
     color: #d54b57;
     background: white;
     border: 1px solid #d54b57;
+}
+
+@keyframes launching {
+    from{
+        bottom: 245px;
+        left:245px;
+        position: absolute;
+    }
+    50%{
+        top: 400px
+    }
+    to{
+        top: 0;
+        left: 300px;
+    }
 }
